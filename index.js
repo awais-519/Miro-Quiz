@@ -25,4 +25,3 @@ app.use('/quizzes', quizzesRoute);
 app.get('/', (Req, res) => {
 	res.send('WELCOME TO HOMEPAGE');
 });
-
