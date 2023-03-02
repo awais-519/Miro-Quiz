@@ -2,11 +2,11 @@ const Express = require('express');
 const quizzesRoute = require('./Routes/quizzes');
 const bodyParser = require('body-parser');
 const connection = require('./Database/connection');
+const { PORT } = require('./config');
 
 const app = Express();
-const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`SERVERS LISTENING ON PORT ${PORT}`));
+app.listen(PORT, () => console.log(`SERVERS LISTENING ON PORT`));
 
 // Connect to the database
 connection.connect((err) => {
