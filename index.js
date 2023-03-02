@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const connection = require('./Database/connection');
 
 const app = Express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`SERVERS LISTENING ON PORT ${PORT}`));
 
