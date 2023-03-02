@@ -5,7 +5,7 @@ const connection = require('./Database/connection');
 const { PORT } = require('./config');
 const app = Express();
 
-app.listen(5000, () => console.log(`SERVERS LISTENING ON PORT`));
+app.listen(PORT, () => console.log(`SERVERS LISTENING ON PORT ${PORT}`));
 
 // Connect to the database
 connection.connect((err) => {

@@ -3,10 +3,10 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const DB = {
-	host: 'localhost',
-	user: 'quiz_user',
-	password: 'quiz_password',
-	database: 'quiz_db',
+	host: process.env.DB_HOST,
+	user: process.env.DB_USERNAME,
+	password: process.env.DB_PASSWORD,
+	database: process.env.DB_DBNAME,
 };
 const PORT = process.env.PORT;
 
