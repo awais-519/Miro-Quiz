@@ -7,6 +7,7 @@ const DB = {
 	user: process.env.DB_USERNAME,
 	password: process.env.DB_PASSWORD,
 	database: process.env.DB_DBNAME,
+	port: process.env.DB_PORT,
 };
 const PORT = process.env.PORT;
 
